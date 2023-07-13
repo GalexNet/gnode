@@ -1,0 +1,14 @@
+services:
+  gnode:
+    image: alexgale/gnode:dev
+    container_name: gnode
+    command: sh -c "npm run dev"
+    working_dir: /app
+    volumes:
+      - ./localconfig:/config
+      - .:/app:cached
+    ports:
+      - 8080:8080
+    build:
+      context: .
+      dockerfile: Dockerfile
