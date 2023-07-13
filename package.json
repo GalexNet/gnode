@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "build": "docker build . -t alexgale/gnode",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/GalexNet/gnode/issues"
   },
-  "homepage": "https://github.com/GalexNet/gnode#readme"
+  "homepage": "https://github.com/GalexNet/gnode#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
