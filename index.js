@@ -1,12 +1,18 @@
 const express = require('express')
+const si = require('systeminformation')
 const { loadConfig } = require('./utils/config/config-utils')
 
 const app = express()
 const port = 8080
 
 app.locals.config = loadConfig()
-console.log(app.locals)
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', (req, res) => {
+  si.system().then(data => {
+    res.json(data)
+  })
+})
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => {
+  console.log(`\ngnode is listening on port ${port}`)
+})

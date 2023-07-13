@@ -3,6 +3,7 @@ services:
     image: alexgale/gnode:dev
     container_name: gnode
     command: sh -c "npm run dev"
+    pid: "host"
     working_dir: /app
     volumes:
       - ./localconfig:/config

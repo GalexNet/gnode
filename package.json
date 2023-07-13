@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/GalexNet/gnode#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "systeminformation": "^5.18.7"
   },
   "devDependencies": {
     "nodemon": "^3.0.1",
