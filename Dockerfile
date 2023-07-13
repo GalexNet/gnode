@@ -11,4 +11,4 @@ RUN npm ci --omit=dev
 COPY . .
 
 EXPOSE 8080
-cmd ["npm", "start"]
+cmd ["node", "index.js"]
