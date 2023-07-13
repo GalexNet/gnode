@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "docker build . -t alexgale/gnode",
+    "build": "docker build . -t alexgale/gnode --platform=linux/amd64",
+    "push": "docker push alexgale/gnode:latest",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
