@@ -8,7 +8,7 @@ const port = 8080
 app.locals.config = loadConfig()
 
 app.get('/', (req, res) => {
-  si.system().then(data => {
+  si.cpu().then(data => {
     res.json(data)
   })
 })

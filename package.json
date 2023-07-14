@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "docker compose up --build",
-    "dev": "nodemon index.js",
     "build": "docker build . -t alexgale/gnode:latest --platform=linux/amd64",
-    "push": "docker push alexgale/gnode:latest",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "push": "docker push alexgale/gnode:latest"
   },
   "repository": {
     "type": "git",
